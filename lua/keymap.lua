@@ -2,6 +2,9 @@ local v = vim.api
 local map = v.nvim_set_keymap
 local defOp = {noremap = true}
 
+--Other
+map("n", "<C-f>", ":Rg ", defOp)
+
 --ESC
 map("v", "<C-j>", "<Esc>", defOp)
 map("i", "<C-j>", "<Esc>", defOp)
