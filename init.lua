@@ -1,3 +1,5 @@
-require('keymap')
 require('settings')
 require('plugins')
+require('lan')
+require('setup')
+require('keymap')

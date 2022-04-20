@@ -30,6 +30,8 @@ vim.bo.expandtab = true
 
 vim.g.mapleader = ' '
 vim.b.mapleader = ' '
+vim.g.maploclalleader = ' '
+vim.b.maploclalleader = ' '
 
 vim.cmd('language en_US.utf-8')
 vim.wo.list = true
@@ -38,3 +40,4 @@ vim.o.listchars = 'tab:┆·,trail:·,precedes:,extends:'
 vim.g.markdown_fenced_languages = {'sh', 'vim'}
 
 vim.g.termbufm_direction_cmd = 'new'
+

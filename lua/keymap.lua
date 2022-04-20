@@ -2,12 +2,18 @@ local v = vim.api
 local map = v.nvim_set_keymap
 local defOp = {noremap = true}
 
---Other
-map("n", "<C-f>", ":Rg ", defOp)
+--Telescope
+map("n", "<leader>ff", [[<cmd>lua require('telescope.builtin').find_files()<cr>]], defOp)
+map("n", "<leader>fg", [[<cmd>lua require('telescope.builtin').live_grep()<cr>]], defOp)
+map("n", "<leader>fb", [[<cmd>lua require('telescope.builtin').buffers()<cr>]], defOp)
+map("n", "<leader>fh", [[<cmd>lua require('telescope.builtin').help_tags()<cr>]], defOp)
+
 
 --ESC
 map("v", "<C-j>", "<Esc>", defOp)
+map("n", "<C-j>", "<Esc>", defOp)
 map("i", "<C-j>", "<Esc>", defOp)
+map("t", "<C-j>", "<Esc>", defOp)
 
 --Movement
 map("i", "<C-l>", "<Esc>la", defOp)
