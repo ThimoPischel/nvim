@@ -9,9 +9,12 @@ return require('packer').startup(function()
   use 'dhruvasagar/vim-table-mode'
   use 'junegunn/vim-easy-align'
   use { 'nvim-telescope/telescope.nvim', requires = { {'nvim-lua/plenary.nvim'} } }
+  use 'morhetz/gruvbox'
 
   --Lang Support
   use 'neovim/nvim-lspconfig'
   use 'nvim-lua/completion-nvim'
   use 'hrsh7th/nvim-compe'
+
+  use 'nvim-treesitter/nvim-treesitter'
 end)
