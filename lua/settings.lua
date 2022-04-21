@@ -41,3 +41,4 @@ vim.g.markdown_fenced_languages = {'sh', 'vim'}
 
 vim.g.termbufm_direction_cmd = 'new'
 
+vim.opt.guifont = { "JetBrainsMono Nerd Font Mono", "h12" }

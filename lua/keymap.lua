@@ -26,6 +26,10 @@ map("n", "<M-j>", "ddp", defOp)
 map("n", "<M-k>", "ddkP", defOp)
 map("i", "<M-j>", "<Esc>ddp", defOp)
 map("i", "<M-k>", "<Esc>ddkP", defOp)
+map("v", "<M-h>", "<gv", defOp)
+map("v", "<M-l>", ">gv", defOp)
+map("n", "<M-h>", "<<", defOp)
+map("n", "<M-l>", ">>", defOp)
 
 --Scopes
 function ScopePosibleOverJump(char)
@@ -40,13 +44,21 @@ function ScopePosibleOverJump(char)
 	v.nvim_win_set_cursor(0, {row, col + 1})
 end
 
-map("i", "[", "[]<Esc>i", defOp)
-map("i", "(", "()<Esc>i", defOp)
-map("i", "<", "<><Esc>i", defOp)
-map("i", "{", "{}<Esc>i", defOp)
-map("i", "{{","{<CR>}<Esc>O", defOp)
+map("i", "<M-[>", "[]<Esc>i", defOp)
+map("i", "<M-]>","[<CR>]<Esc>O", defOp)
+map("i", "<M-(>", "()<Esc>i", defOp)
+map("i", "<M-<>", "<><Esc>i", defOp)
+map("i", "<M-{>", "{}<Esc>i", defOp)
+map("i", "<M-}>","{<CR>}<Esc>O", defOp)
+map("i", "<M-'>", "''<Esc>i", defOp)
+map("i", "<M-\">", "\"\"<Esc>i", defOp)
 
 map("i", "]", [[<Cmd>lua ScopePosibleOverJump("]")<CR>]], defOp)
 map("i", ")", [[<Cmd>lua ScopePosibleOverJump(")")<CR>]], defOp)
 map("i", ">", [[<Cmd>lua ScopePosibleOverJump(">")<CR>]], defOp)
 map("i", "}", [[<Cmd>lua ScopePosibleOverJump("}")<CR>]], defOp)
+map("i", "'", [[<Cmd>lua ScopePosibleOverJump("'")<CR>]], defOp)
+map("i", "\"", [[<Cmd>lua ScopePosibleOverJump("\"")<CR>]], defOp)
+
+
+
