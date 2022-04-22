@@ -2,18 +2,31 @@ local v = vim.api
 local map = v.nvim_set_keymap
 local defOp = {noremap = true}
 
+--Open Config
+map("n", "<leader>conf", ":e $MYVIMRC<CR>", defOp)
+
 --Telescope
 map("n", "<leader>ff", [[<cmd>lua require('telescope.builtin').find_files()<cr>]], defOp)
 map("n", "<leader>fg", [[<cmd>lua require('telescope.builtin').live_grep()<cr>]], defOp)
-map("n", "<leader>fb", [[<cmd>lua require('telescope.builtin').buffers()<cr>]], defOp)
+map("n", "<leader>bo", [[<cmd>lua require('telescope.builtin').buffers()<cr>]], defOp)
 map("n", "<leader>fh", [[<cmd>lua require('telescope.builtin').help_tags()<cr>]], defOp)
 
+--Buffer
+map("n", "<leader>bn", ":bnext<CR>", defOp)
+map("n", "<leader>bp", ":bprev<CR>", defOp)
+map("n", "<leader>bc", ":bdelete<CR>", defOp)
+map("n", "<leader>bwc", ":w<CR>:bdelete<CR>", defOp)
 
 --ESC
-map("v", "<C-j>", "<Esc>", defOp)
 map("n", "<C-j>", "<Esc>", defOp)
 map("i", "<C-j>", "<Esc>", defOp)
-map("t", "<C-j>", "<Esc>", defOp)
+map("v", "<C-j>", "<Esc>", defOp)
+map("s", "<C-j>", "<Esc>", defOp)
+map("x", "<C-j>", "<Esc>", defOp)
+map("c", "<C-j>", "<Esc>", defOp)
+map("o", "<C-j>", "<Esc>", defOp)
+map("l", "<C-j>", "<Esc>", defOp)
+map("t", "<C-j>", "<C-\\><C-n>", defOp)
 
 --Movement
 map("i", "<C-l>", "<Esc>la", defOp)
