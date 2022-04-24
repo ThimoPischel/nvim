@@ -1,12 +1,16 @@
 -- lua/settings
-require('settings')
 -- lua/plugins
-require('plugins')
 -- lua/lan
-require('lan')
 -- lua/setup
-require('setup')
+-- lua/setup/nvim-tree.lua
+-- lua/setup/telescope.lua
+-- lua/setup/compe.lua
 -- lua/keymap
+
+require('settings')
+require('plugins')
+require('lan')
+require('setup')
 require('keymap')
 
 

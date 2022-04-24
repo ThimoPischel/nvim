@@ -35,10 +35,13 @@ vim.b.maploclalleader = ' '
 
 vim.cmd('language en_US.utf-8')
 vim.wo.list = true
-vim.o.listchars = 'tab:┆·,trail:·,precedes:,extends:'
+vim.o.listchars = 'tab:·,trail:·,precedes:,extends:'
 
 vim.g.markdown_fenced_languages = {'sh', 'vim'}
 
 vim.g.termbufm_direction_cmd = 'new'
 
-vim.opt.guifont = { "JetBrainsMono Nerd Font Mono", "h12" }
+if vim.fn.has("windows") == 1 then
+  vim.api.nvim_command('set guifont=FantasqueSansMono\\ NF:h18')
+  vim.api.nvim_command('set shell=pwsh.exe')
+end

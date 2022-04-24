@@ -73,5 +73,9 @@ map("i", "}", [[<Cmd>lua ScopePosibleOverJump("}")<CR>]], defOp)
 map("i", "'", [[<Cmd>lua ScopePosibleOverJump("'")<CR>]], defOp)
 map("i", "\"", [[<Cmd>lua ScopePosibleOverJump("\"")<CR>]], defOp)
 
-
+--Nvim Tree
+map("n", "<leader>to", ":NvimTreeOpen<CR>", defOp)
+map("n", "<leader>tc", ":NvimTreeClose<CR>", defOp)
+map("n", "<leader>tr", ":NvimTreeRefresh<CR>", defOp)
+map("n", "<leader>tt", ":NvimTreeToggle<CR>", defOp)
 

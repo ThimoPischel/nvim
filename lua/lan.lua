@@ -26,6 +26,8 @@ if vim.fn.has("unix") == 1 then
   }
 elseif vim.fn.has("windows") == 1 then
   print("Windows Language server...")
+  --rust
+  require'lspconfig'.rls.setup{}
 else
   print("No system for the language server found.")
 end;
