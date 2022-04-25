@@ -8,7 +8,7 @@ vim.o.hidden = true
 vim.o.updatetime = 300
 vim.o.scrolloff = 5
 vim.o.sidescrolloff = 5
-vim.o.completeopt = 'menuone,noinsert,noselect'
+vim.o.completeopt = 'menuone,noselect'
 vim.o.shortmess = vim.o.shortmess .. 'c'
 vim.o.showmode = false
 

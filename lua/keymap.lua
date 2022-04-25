@@ -79,3 +79,11 @@ map("n", "<leader>tc", ":NvimTreeClose<CR>", defOp)
 map("n", "<leader>tr", ":NvimTreeRefresh<CR>", defOp)
 map("n", "<leader>tt", ":NvimTreeToggle<CR>", defOp)
 
+--completion
+vim.api.nvim_command("inoremap <expr> <Tab>   pumvisible() ? \"\\<C-n>\" : \"\\<Tab>\"")
+vim.api.nvim_command("inoremap <expr> <S-Tab> pumvisible() ? \"\\<C-p>\" : \"\\<S-Tab>\"")
+
+--copy paste
+map("n", "<leader>p", "\"+p", defOp)
+map("n", "<leader>y", "\"+yy", defOp)
+map("v", "<leader>y", "\"+y", defOp)
