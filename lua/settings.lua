@@ -1,3 +1,5 @@
+vim.opt.mouse = "a"
+
 vim.o.ruler = false
 vim.o.splitright = true
 vim.o.splitbelow = true
