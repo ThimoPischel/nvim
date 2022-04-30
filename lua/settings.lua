@@ -43,7 +43,7 @@ vim.g.markdown_fenced_languages = {'sh', 'vim'}
 
 vim.g.termbufm_direction_cmd = 'new'
 
-if vim.fn.has("windows") == 1 then
+if vim.fn.has("win32") == 1 then
   vim.api.nvim_command('set guifont=FantasqueSansMono\\ NF:h18')
   vim.api.nvim_command('set shell=pwsh.exe')
 end
