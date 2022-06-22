@@ -84,9 +84,9 @@ vim.api.nvim_command("inoremap <expr> <Tab>   pumvisible() ? \"\\<C-n>\" : \"\\<
 vim.api.nvim_command("inoremap <expr> <S-Tab> pumvisible() ? \"\\<C-p>\" : \"\\<S-Tab>\"")
 
 --copy paste
-map("n", "<leader>p", "\"+p", defOp)
-map("n", "<leader>y", "\"+yy", defOp)
-map("v", "<leader>y", "\"+y", defOp)
+map("n", "<leader>p", "\"*p", defOp)
+map("n", "<leader>y", "\"*yy", defOp)
+map("v", "<leader>y", "\"*y", defOp)
 
 --Easy align
 map("v", "<leader>a", ":EasyAlign ", defOp)
