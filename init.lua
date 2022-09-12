@@ -7,4 +7,4 @@ require('setup')
 require('keymap')
 
 
-vim.cmd("colorscheme gruvbox")
+vim.cmd("colorscheme dracula")

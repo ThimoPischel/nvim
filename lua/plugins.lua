@@ -7,6 +7,7 @@ return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   
+  use 'Mofiqul/dracula.nvim'
   use 'dhruvasagar/vim-table-mode'
   use 'junegunn/vim-easy-align'
   use { 'nvim-telescope/telescope.nvim', requires = { {'nvim-lua/plenary.nvim'} } }

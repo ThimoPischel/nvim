@@ -26,7 +26,7 @@ require'lspconfig'.sumneko_lua.setup {
 }
 
 --rust
-require'lspconfig'.rls.setup{}
+require'lspconfig'.rust_analyzer.setup{}
 
 --python
 require'lspconfig'.pyright.setup{}
